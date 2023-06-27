@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index</title>
+    <style>
+.box1 {
+  position: absolute;
+  background: lightgreen;
+  width: 15%;
+  left: 220px;
+  top: -20px;
+  height: 50px;
+  padding-top: 30px;
+   position: relative; z-index: 1; 
+   
+}
+.box2 {
+  position:absolute;
+  background: rgb(11, 59, 234);
+  width: 15%;
+  left: 140px;
+  top: +30px;
+  height: 50px;
+  padding-top: 30px;
+  
+  
+
+}
+.box3 {
+  position:absolute;
+  background: rgb(209, 227, 10);
+  width: 15%;
+  left: 190px;
+  top: +10px;
+  height: 50px;
+  padding-top: 30px;
+
+
+}
+.box2:hover { 
+    z-index: 3; transform: scale(1.1); 
+}
+.box3:hover { 
+    z-index: 3; transform: scale(1.1); 
+}
+.box1:hover { 
+    z-index: 3; transform: scale(1.5); 
+}
+    </style>
+</head>
+<body>
+     <!-- <div class="card"> -->
+<div class="box1">BOX1</div>
+<div class="box2">BOX2</div>
+<div class="box3">BOX3</div> 
+
+
+
+    
+</body>
+</html>
+
+
+
+
